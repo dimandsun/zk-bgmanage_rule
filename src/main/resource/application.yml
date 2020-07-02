@@ -1,0 +1,4 @@
+profiles:
+  #dev是测试环境，pro是生产环境，local是本地使用外网访问内部项目
+  #修改配置文件时，除了需要改这，还需要改logback.xml的日志目录
+  active: dev

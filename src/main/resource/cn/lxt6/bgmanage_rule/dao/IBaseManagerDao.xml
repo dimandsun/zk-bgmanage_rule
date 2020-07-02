@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.lxt6.bgmanage_rule.dao.IBaseManagerDao">
+
+    <select id="selectById" parameterType="map" resultType="map">
+        SELECT id,investor_id,school_id,type_id,routine_json,wallet_rechange_json,wallet_refund_flag,wallet_refund_json,extend_json
+          ,deposit_refund_flag,deposit_refund_json,service_time_flag,service_time_json,unique_system,j1,j2,j3
+         from base_manager where id=#{id}
+    </select>
+    <select id="verifyUniqueUpdate" parameterType="map" resultType="int">
+        SELECT 1 from base_manager where id!=#{id} and unique_system=#{uniqueSystem}
+    </select>
+    <select id="verifyUniqueInsert" parameterType="map" resultType="int">
+        SELECT 1 from base_manager where unique_system=#{uniqueSystem}
+    </select>
+</mapper>
