@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>8</java.version>
         <dbcp.version>1.4</dbcp.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <mysql.version>8.0.13</mysql.version>
         <cglib.version>3.2.10</cglib.version>
         <jedis.version>2.6.0</jedis.version>
